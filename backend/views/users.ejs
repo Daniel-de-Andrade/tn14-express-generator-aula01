@@ -1,0 +1,13 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+
+<% if(users && id) { %>
+<%- include('./partials/userDetail') %>
+<% } %>
+
+<% if(users && !id) { %>
+<%- include('./partials/usersList') %>
+<% } %>
+
+<%- include('./partials/footer') %>

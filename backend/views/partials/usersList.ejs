@@ -1,0 +1,9 @@
+<section class="users">
+    <h2>LISTA DE TODOS OS USUÁRIOS</h2>
+    <% for(let user of users) { %>
+    <article class="user">
+        <img src="<%= user.avatar %>" />
+        <h3>#<%= user.id %> | <%= user.nome %> <%= user.sobrenome %></h3>
+    </article>
+    <% } %>
+</section>
